@@ -103,8 +103,3 @@ def parse_expression(tokens, current_token_index):
         return None, current_token_index + 1
     else:
         raise SyntaxError('Unexpected token: {}'.format(current_token))
-
-# Now we have implemented the basic structure of the expression parser. 
-# Depending on the complexity of expressions, we can extend this function to handle more cases.
-
-# Implement other parsing functions such as parse_conditional_statement, parse_loop_statement, parse_print_statement, and parse_expression

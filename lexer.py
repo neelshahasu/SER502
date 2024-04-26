@@ -11,7 +11,6 @@ token_types = [
     ('NEWLINE', r'\n')
 ]
 
-# Combine the regular expressions into a single regex
 regex = re.compile('|'.join(f'(?P<{name}>{pattern})' for name, pattern in token_types))
 
 def lexer(code):
@@ -34,7 +33,6 @@ def lexer(code):
     
     return tokens
 
-# Test the lexer with some code
 code = """
 a = True
 b = 10
